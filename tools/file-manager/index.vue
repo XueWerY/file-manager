@@ -224,7 +224,7 @@ import { ref, computed, watch, nextTick, onMounted, onUnmounted } from 'vue'
 import { Filesystem, Directory, Encoding } from '@capacitor/filesystem'
 import { CapacitorHttp } from '@capacitor/core'
 import HttpServer from './capacitor-http-server'
-import BaseDialog from '../../../../components/common/BaseDialog.vue'
+import BaseDialog from '../../../../components/ui/BaseDialog.vue'
 import ConfirmDialog from '../../../../components/common/overlay/ConfirmDialog.vue'
 import { logger } from '../../../../lib/logger'
 import { useSettingsStore } from '../../../../stores/settingsStore'
@@ -1764,8 +1764,8 @@ onUnmounted(() => {
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 12px;
   padding: 32px 28px;
-  max-width: 380px;
-  width: 80%;
+  width: 500px;
+  max-width: 90%;
   text-align: center;
 }
 
@@ -1774,7 +1774,7 @@ onUnmounted(() => {
   font-size: 18px;
   font-weight: 700;
   margin: 0 0 12px;
-  text-align: left;
+  text-align: center;
 }
 
 .lan-dialog-separator {
@@ -1884,8 +1884,8 @@ onUnmounted(() => {
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 12px;
   padding: 24px;
-  max-width: 380px;
-  width: 80%;
+  width: 500px;
+  max-width: 90%;
   text-align: center;
 }
 
